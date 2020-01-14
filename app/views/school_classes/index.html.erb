@@ -1,0 +1,6 @@
+<h1>School Class Index Page</h1>
+<ul>
+<% @classes.each do |sc| %>
+    <li><strong>Subject: </strong><%=link_to sc.title, school_class_path(sc) %></li>
+    <%end%>
+    </ul>

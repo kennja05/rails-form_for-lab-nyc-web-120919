@@ -1,0 +1,12 @@
+<h1>New Student Form</h1>
+
+<%= form_for @student do |f| %>
+<p><%= f.label :first_name %>
+<%= f.text_field :first_name %></p>
+<p><%= f.label :last_name %>
+<%= f.text_field :last_name %></p>
+<%= f.submit "Create Student" %>
+<% end %>  
+
+<br>
+<%= link_to "cancel action", students_path %>
